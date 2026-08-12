@@ -50,6 +50,14 @@ public class Carro {
         return false;
     }
 
+    public TipoCombustivel getTipoCombustivel(){
+        return this.tanque.getTipoCombustivel();
+    }
+
+    public int getCapacidadeTanque(){
+        return this.tanque.getCapacidade();
+    }
+
     @Override
     public String toString() {
         return "Carro:\n  Modelo=" + modelo + "\n  Motor=" + motor + "\n  Tanque=" + tanque;
